@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -20,7 +21,11 @@ export default function Home({ allPosts }) {
             <h2>More Stories</h2>
             <div>
                {allPosts.map((post) => (
-                  <p key={post.slug}>{post.title}</p>
+                  <p key={post.slug}>
+                     <Link as={`/posts/${post.slug}`} href="/posts/[slug]">
+                        <a>{post.title}</a>
+                     </Link>
+                  </p>
                ))}
             </div>
          </main>
