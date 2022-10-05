@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
    return (
       <footer className="bg-neutral-800">
-         <div className="p-12">
+         <div className="px-36 py-12">
             <h1 className="text-white text-3xl">Frameworking Ministries</h1>
             <p className="text-white text-sm py-2">
                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
